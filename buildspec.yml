@@ -8,7 +8,7 @@ phases:
       - echo Entered the install phase...
       - pip install pipenv
       - pipenv install
-      - npm install flask
+      - pip install flask
     finally:
       - echo This always runs even if the update or install command fails 
   build:
