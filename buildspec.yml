@@ -15,6 +15,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
+      - pipenv run
       - python tests/test_sample.py
       - pipenv run python -m unittest # not an interactive session so we need to run
     finally:
